@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Address book</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+<style type="text/css">
+    .bs-example{
+    	margin: 20px;
+    }
+</style>
+</head>
+
+<body>
+<div class="bs-example">
+
+ 
+
+<div class="container">
+
+	<div class="row">
+	<div class="col-xs-4">
+		<div class="panel panel-default">
+			<div class="panel-heading">All contacts</div>
+			<div class="panel-body">
+				<input  type="text" id="searchKey"/>
+				<button class="btn btn-info btn-xs" id="btnSearch">Search</button>
+				<button class="btn btn-warning btn-xs pull-right" id="btnAuth">Authorize</button>
+				<button class="btn btn-danger btn-xs pull-right" id="btnSync">Sync</button>
+				<br>
+				<br>
+				<br>
+				<ul class="list-unstyled" id="contacts"></ul>
+			</div>
+		</div>
+	</div>
+ 	<div class="col-xs-4">
+ 		<div class="panel panel-default">
+	 		<div class="panel-heading">Selected contact</div>
+	 		<div class="panel-body">
+		 	 
+				<form id="contactForm">
+				 	<div class="form-group">
+						<input id="contactId" name="id" type="hidden" disabled />
+					</div>
+					<div class="form-group">
+						<label>Name:</label>
+						<input  class="form-control" type="text" id="name" name="name" placeholder="Name" required>
+					</div>
+					<div class="form-group">
+						<label>Surame:</label>
+						<input  class="form-control" type="text" id="surname" name="surname" placeholder="Surname" required>
+					</div>
+					<div class="form-group">
+						<label>Email:</label>
+						<input  class="form-control" type="email" id="email" name="email" placeholder="Email" required>
+					</div>
+					<div class="form-group">
+						<label>Phone:</label>
+						<input  class="form-control" type="text" id="phone" placeholder="Phone" name="phone"/>
+					</div>
+					<button class="btn btn-default pull-left" id="btnAdd">Clear Fields</button>
+					<button  class="btn btn-danger pull-right" id="btnDelete">Delete</button>
+					<button  class="btn btn-primary pull-right" id="btnSave">Save</button>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="row">
+
+	</div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.js"></script>
+<script src="javascripts/main.js"></script>
+</div>
+</body>
+</html>

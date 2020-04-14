@@ -1,0 +1,13 @@
+{
+  "name": "address-book",
+  "description": "Address book Application",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "body-parser": "~1.8.1",
+    "ejs": "^1.0.0",
+    "express": "3.x",
+    "googleapis": "^1.0.20",
+    "jade": "*"
+  }
+}
